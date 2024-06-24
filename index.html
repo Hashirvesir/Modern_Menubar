@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.js & Glsl Modern_Sidebar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+    img{
+      opacity: 0;
+    }
+    .app canvas{
+        position: fixed;
+        z-index: 0;
+        top: 0;
+        left: 0;
+    }
+  </style>
+  <body>
+    <div
+      class="app font-['Playwrite_US_Trad'] font-light flex text-white w-full h-screen bg-zinc-900"
+    >
+      <div class="canvas relative w-1/2 h-screen">
+        <div
+          class="text-2xl opacity-60 cursor-pointer font-base fixed top-10 right-10"
+        >
+          close menu <i class="ri-close-large-fill"></i>
+        </div>
+        <div
+          class="images w-[25vw] h-[33vw] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        >
+          <img class="absolute w-full h-full object-cover " src="/first.jpg" alt="#" />
+          <img class="absolute w-full h-full object-cover " src="/second.jpg" alt="#" />
+          <img class="absolute w-full h-full object-cover " src="/third.jpg" alt="#" />
+          <img class="absolute w-full h-full object-cover " src="/fourth.jpg" alt="#" />
+        </div>
+      </div>
+      <div class="w-1/2 h-screen flex justify-center items-center">
+        <div class="links flex flex-col gap-10">
+          <a
+            class="lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl"
+            href="#"
+          >
+            <small class="text-xl tracking-normal">01.</small> Bella
+            specttacolo</a
+          >
+          <a
+            class="lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl"
+            href="#"
+          >
+            <small class="text-xl tracking-normal">02.</small>dolce far
+            niente</a
+          >
+          <a
+            class="lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl"
+            href="#"
+          >
+            <small class="text-xl tracking-normal">03.</small> sofisticado</a
+          >
+          <a
+            class="lowercase transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl"
+            href="#"
+          >
+            <small class="text-xl tracking-normal">04.</small> Bella
+            mangnifico</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js" defer></script>
+  </body>
+</html>
